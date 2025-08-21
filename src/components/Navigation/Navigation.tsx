@@ -48,7 +48,7 @@ export default function Navigation() {
   return (
     <Box sx={{ display: 'flex' }} mb={8} data-testid="navigation">
       <CssBaseline />
-      <AppBar component="nav" color='primary'>
+      <AppBar component="nav" sx={{ backgroundColor: '#e8e6deff' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -64,11 +64,26 @@ export default function Navigation() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            SumAutomation
+            <img src="/pre.png" alt="Logo" style={{ height: "100px", width: "200px"}} />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            {/* Add a style tag for hover effect */}
+            <style>
+              {`
+                .nav-link {
+                  padding: 0 5px;
+                  text-decoration: none;
+                  font-size: 18px;
+                  color: #0c0808ff;
+                  transition: color 0.2s;
+                }
+                .nav-link:hover {
+                  color: #493aecff;
+                }
+              `}
+            </style>
             {navItems.map(({name, title, path}) => (
-              <Link key={name} to={path} style={{ padding: "0 5px", textDecoration: "none", fontSize: "18px", color: "#fff" }}>
+              <Link key={name} to={path} className="nav-link">
                 {title}
               </Link>
             ))}
@@ -94,3 +109,4 @@ export default function Navigation() {
     </Box>
   );
 }
+
