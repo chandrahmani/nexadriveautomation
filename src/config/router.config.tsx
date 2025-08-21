@@ -51,6 +51,12 @@ export const MAIN_ROUTES: ROUTE[] = [
 		title: "",
 		name: 'terms',
 		element: <TermsConditions />,
+	},
+	{
+		path: '/about',
+		title: "",
+		name: 'about',
+		element: <About />,
 	}
 ]
 

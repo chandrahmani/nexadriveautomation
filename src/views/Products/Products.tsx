@@ -9,7 +9,7 @@ import { Card, CardContent, CardMedia, Container, Grid, Typography } from "@mui/
 
 const Products = () => {
     return(
-        <Container sx={{ py: 6 }}>
+        <Container sx={{ pt: 9, pb:3 }}>
         <Typography variant="h4" align="center" gutterBottom>
           Electricals Products
         </Typography>

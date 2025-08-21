@@ -2,11 +2,11 @@ import { Box, Container, Typography, Paper, Avatar, Grid } from '@mui/material';
 
 function About() {
   return (
-    <Container maxWidth="md" sx={{ py: 4 }}>
-      <Typography variant="h3" component="h1" align="center" gutterBottom>
+    <Container  sx={{ p: 8 }}>
+      <Typography variant="h4" gutterBottom>
         About Us
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="body1" paragraph>  
         Welcome to our company! We are dedicated to providing the best services and
         solutions to our customers.
         SumAutomation is a leading brand in electricity and automation

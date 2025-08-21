@@ -2,7 +2,7 @@ import { Box, Container, Typography, Paper, Avatar, Grid } from '@mui/material';
 
 function PrivacyPolicy() {
   return (
-    <Container sx={{ py: 6 }}>
+    <Container sx={{ py: 8 }}>
         <Typography variant="h4" gutterBottom>
           Privacy Policy
         </Typography>
