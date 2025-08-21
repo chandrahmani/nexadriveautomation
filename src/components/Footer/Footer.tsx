@@ -12,7 +12,7 @@ function Footer() {
 				mt: 'auto', // Push footer to the bottom of the page
 			}}
 		>
-			<Container >
+			<Box sx={{pl:4 , pr:4}}>
 				<Grid container spacing={3} alignItems="center">
 					<Grid item xs={12} md={6}>
 						<Typography variant="h6" sx={{ fontWeight: 800 }}>
@@ -28,7 +28,7 @@ function Footer() {
 
 					</Grid>
 				</Grid>
-			</Container>
+			</Box>
 		</Box>
 	);
 }
