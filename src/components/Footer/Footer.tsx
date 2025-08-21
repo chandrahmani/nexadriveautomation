@@ -1,5 +1,5 @@
 
-import { Box, Container, Typography, Link } from '@mui/material';
+import { Box, Container, Typography, Link, Stack } from '@mui/material';
 
 function Footer() {
 	return (
@@ -15,9 +15,13 @@ function Footer() {
 			}}
 		>
 			<Container maxWidth="lg">
-				<Typography variant="body1" align="center">
-					&copy; {new Date().getFullYear()} Powered By: <a href="https://webtechpie.com/" target='_blank'>Webtechpie.com</a>
-				</Typography>
+				<Stack direction={{ xs: "column", sm: "row" }} justifyContent="space-between" spacing={2} alignItems={{ xs: "flex-start", sm: "center" }}>
+					<Stack direction="row" spacing={1} alignItems="center">
+
+						<Typography fontWeight={800}>SumAutomation</Typography>
+					</Stack>
+					<Typography variant="body2" color="text.secondary">© {new Date().getFullYear()} SumAutomation. All rights reserved.</Typography>
+				</Stack>
 			</Container>
 		</Box>
 	);
