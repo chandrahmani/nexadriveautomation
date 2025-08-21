@@ -8,8 +8,11 @@ function About() {
       </Typography>
       <Typography variant="body1" paragraph>
         Welcome to our company! We are dedicated to providing the best services and
-        solutions to our customers. Our team of experts is passionate about what
-        we do, and we strive to make a positive impact in everything we create.
+        solutions to our customers.
+        SumAutomation is a leading brand in electricity and automation
+        solutions. Our mission is to deliver reliable, efficient, and
+        innovative energy products that power homes, industries, and
+        businesses with sustainability in mind.
       </Typography>
       <Typography variant="body1" paragraph>
         Our mission is to innovate and deliver high-quality products that meet the
@@ -17,58 +20,6 @@ function About() {
         continuous improvement.
       </Typography>
 
-      <Box sx={{ mt: 4 }}>
-        <Typography variant="h4" component="h2" align="center" gutterBottom>
-          Meet Our Team
-        </Typography>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper elevation={3} sx={{ p: 2, textAlign: 'center' }}>
-              <Avatar
-                alt="John Doe"
-                src="https://via.placeholder.com/150"
-                sx={{ width: 80, height: 80, margin: '0 auto 16px' }}
-              />
-              <Typography variant="h6" component="h3">
-                John Doe
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                CEO & Founder
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper elevation={3} sx={{ p: 2, textAlign: 'center' }}>
-              <Avatar
-                alt="Jane Smith"
-                src="https://via.placeholder.com/150"
-                sx={{ width: 80, height: 80, margin: '0 auto 16px' }}
-              />
-              <Typography variant="h6" component="h3">
-                Jane Smith
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lead Developer
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper elevation={3} sx={{ p: 2, textAlign: 'center' }}>
-              <Avatar
-                alt="Alice Johnson"
-                src="https://via.placeholder.com/150"
-                sx={{ width: 80, height: 80, margin: '0 auto 16px' }}
-              />
-              <Typography variant="h6" component="h3">
-                Alice Johnson
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                UX Designer
-              </Typography>
-            </Paper>
-          </Grid>
-        </Grid>
-      </Box>
     </Container>
   );
 }

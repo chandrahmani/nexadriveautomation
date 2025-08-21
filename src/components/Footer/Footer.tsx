@@ -1,5 +1,6 @@
 
-import { Box, Container, Typography, Link, Stack } from '@mui/material';
+import { Box, Container, Typography, Link, Stack, Grid, } from '@mui/material';
+
 
 function Footer() {
 	return (
@@ -14,14 +15,20 @@ function Footer() {
 				mt: 'auto', // Push footer to the bottom of the page
 			}}
 		>
-			<Container maxWidth="lg">
-				<Stack direction={{ xs: "column", sm: "row" }} justifyContent="space-between" spacing={2} alignItems={{ xs: "flex-start", sm: "center" }}>
-					<Stack direction="row" spacing={1} alignItems="center">
+			<Container >
+				<Grid container spacing={3} alignItems="center">
+					<Grid item xs={12} md={6}>
+						<Typography variant="h6" sx={{ fontWeight: 800 }}>SumAutomation</Typography>
+					</Grid>
+					<Grid item xs={12} md={6}>
+						<Stack direction="row" justifyContent={{ xs: "flex-start", md: "flex-end" }} spacing={3}>
+							<Link href="/about" underline="hover">About Us</Link>
+							<Link href="/privacy" underline="hover">Privacy Policy</Link>
+							<Link href="/terms" underline="hover">Terms & Conditions</Link>
+						</Stack>
 
-						<Typography fontWeight={800}>SumAutomation</Typography>
-					</Stack>
-					<Typography variant="body2" color="text.secondary">© {new Date().getFullYear()} SumAutomation. All rights reserved.</Typography>
-				</Stack>
+					</Grid>
+				</Grid>
 			</Container>
 		</Box>
 	);
