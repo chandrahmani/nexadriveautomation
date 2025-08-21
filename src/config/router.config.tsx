@@ -5,6 +5,9 @@ import { Home, Settings } from "../views/Dashboard";
 import Landing from "../views/Landing/Landing";
 import Contact from "../views/Contact";
 import Profile from "../views/Dashboard/Profile";
+import Products from "@/views/Products/Products";
+import TermsConditions from "@/views/TermsConditions";
+import PrivacyPolicy from "@/views/PrivacyPolicy";
 
 
 export const configureRoute = (routes: ROUTE[]) => {
@@ -26,16 +29,28 @@ export const MAIN_ROUTES: ROUTE[] = [
 		element: <Landing />,
 	},
 	{
-		path: '/about',
-		title: "About",
-		name: 'about',
-		element: <About />,
+		path: '/products',
+		title: "Products",
+		name: 'products',
+		element: <Products />
+	},
+	{
+		path: '/privacy',
+		title: "",
+		name: 'privacy',
+		element: <PrivacyPolicy />,
 	},
 	{
 		path: '/contact',
 		title: "Contact Us",
 		name: 'contact',
 		element: <Contact />,
+	},
+	{
+		path: '/terms',
+		title: "",
+		name: 'terms',
+		element: <TermsConditions />,
 	}
 ]
 
@@ -44,7 +59,7 @@ export const DASHBOARD_NESTED_ROUTES: ROUTE[] = [
 	{
 		path: '/dashboard',
 		index: true,
-		title: "Dashboard",
+		title: "",
 		name: 'dashboard',
 		element: <Home />,
 	},
