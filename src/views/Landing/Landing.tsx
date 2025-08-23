@@ -22,14 +22,14 @@ const Landing: FC = () => {
       <Grid container spacing={6} alignItems="center">
         <Grid item xs={12} md={6}>
           <Stack spacing={2}>
-            <Typography variant="h2" fontWeight={900} lineHeight={1.1}>
+            <Typography variant="h3" fontWeight={900} lineHeight={1.1} sx={{ fontFamily:'serif'}}>
               Reliable Electricals for <br /> Modern Industry
             </Typography>
-            <Typography variant="h6" color="text.secondary">
+            <Typography variant="body1" color="text.secondary" >
               From switchgear to smart metering, SumAutomation delivers certified, efficient and durable solutions for factories, plants and infrastructure.
             </Typography>
             <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-              <Button size="large" variant="contained" href="/products"    >
+              <Button size="large" variant="contained" href="/products" sx={{ fontFamily:'serif'}}>
                 Explore Products
               </Button>
               <Button size="large" variant="outlined" href="/contact">Get a Quote</Button>

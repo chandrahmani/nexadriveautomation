@@ -10,7 +10,7 @@ import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from "
 const Products = () => {
     return(
         <Box sx={{ pt: 9, pb:3 ,mx:2}}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h4" align="center" gutterBottom sx={{ fontFamily:'serif'}}>
           Electricals Products
         </Typography>
         <Grid container spacing={4} sx={{ mt: 2 }}>
@@ -21,12 +21,13 @@ const Products = () => {
                   boxShadow: 4,
                   transition: "0.3s",
                   "&:hover": { transform: "translateY(-5px)", boxShadow: 6 },
+                  background: '#d6d6d4ff',
                 }}>
                 <CardMedia component="img" height="200" image={p.img} alt={p.title} />
                 <CardContent>
-                  <Typography variant="h4" gutterBottom>{p.title}</Typography>
-                  <Typography variant="h6" gutterBottom>Price: Coming Soon</Typography>
-                  <Typography variant="body2" color="text.secondary">{p.desc}</Typography>
+                  <Typography variant="h4" gutterBottom sx={{ fontFamily:'serif'}}>{p.title}</Typography>
+                  <Typography variant="h6" gutterBottom sx={{ fontFamily:'fantasy'}}>Price: Coming Soon</Typography>
+                  <Typography variant="body2" color="text.secondary" sx={{ fontFamily:'unset'}}>{p.desc}</Typography>
                 </CardContent>
               </Card>
             </Grid>

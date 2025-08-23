@@ -21,9 +21,9 @@ function Footer() {
 					</Grid>
 					<Grid item xs={12} md={6}>
 						<Stack direction="row" justifyContent={{ xs: "flex-start", md: "flex-end" }} spacing={3}>
-							<Link href="/about" underline="hover" sx={{ color: 'black' }}>About Us</Link>
-							<Link href="/privacy" underline="hover" sx={{ color: 'black' }}>Privacy Policy</Link>
-							<Link href="/terms" underline="hover" sx={{ color: 'black' }}>Terms & Conditions</Link>
+							<Link href="/about" underline="hover" sx={{ color: 'black' , fontFamily:'serif'}}>About Us</Link>
+							<Link href="/privacy" underline="hover" sx={{ color: 'black',fontFamily:'serif'}}>Privacy Policy</Link>
+							<Link href="/terms" underline="hover" sx={{ color: 'black',fontFamily:'serif' }}>Terms & Conditions</Link>
 						</Stack>
 
 					</Grid>

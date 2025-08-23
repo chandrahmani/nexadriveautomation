@@ -76,6 +76,7 @@ export default function Navigation() {
                   font-size: 18px;
                   color: #0c0808ff;
                   transition: color 0.2s;
+                  font-family:serif;
                 }
                 .nav-link:hover {
                   color: #493aecff;
