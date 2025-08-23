@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material"
+import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material"
 
   const products = [
     { title: "Smart Meter", desc: "Advanced smart meters for accurate energy monitoring.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVHD9RL60CurvHfqrD7KhEpNa0NWLLLEF5Gg&s" },
@@ -9,14 +9,19 @@ import { Card, CardContent, CardMedia, Container, Grid, Typography } from "@mui/
 
 const Products = () => {
     return(
-        <Container sx={{ pt: 9, pb:3 }}>
+        <Box sx={{ pt: 9, pb:3 ,mx:2}}>
         <Typography variant="h4" align="center" gutterBottom>
           Electricals Products
         </Typography>
         <Grid container spacing={4} sx={{ mt: 2 }}>
           {products.map((p, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
+              <Card sx={{
+                  borderRadius: 3,
+                  boxShadow: 4,
+                  transition: "0.3s",
+                  "&:hover": { transform: "translateY(-5px)", boxShadow: 6 },
+                }}>
                 <CardMedia component="img" height="200" image={p.img} alt={p.title} />
                 <CardContent>
                   <Typography variant="h4" gutterBottom>{p.title}</Typography>
@@ -27,7 +32,7 @@ const Products = () => {
             </Grid>
           ))}
         </Grid>
-      </Container>
+      </Box>
     )
 }
 
