@@ -39,7 +39,7 @@ const Landing: FC = () => {
         <Grid item xs={12} md={6}>
           <Paper elevation={0} sx={{ p: 1.5, borderRadius: 4, overflow: "hidden" }}>
             <img
-              src="https://image.made-in-china.com/2f0j00OjSauNKykRYe/Wgp-Lb-300kw-Smart-Dummy-Load-Bank.webp"
+              src="/image.png"
               alt="SumAutomation industrial panels and components"
               style={{ width: "100%", display: "block", borderRadius: 16 }}
             />
