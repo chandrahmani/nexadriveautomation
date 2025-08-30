@@ -10,7 +10,7 @@ import DashboardLayout from './layout/DashboardLayout'
 import About from './views/About'
 import PrivacyPolicy from './views/PrivacyPolicy'
 import TermsConditions from './views/TermsConditions'
-import { ProtectedRoute } from './config/ProtectedRoute'
+import { ProtectedRoute } from './config/protectedRoute'
 
 export default function Root() {
 	return (
