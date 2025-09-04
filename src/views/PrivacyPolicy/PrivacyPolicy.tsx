@@ -1,10 +1,13 @@
-import {Box, Container, Paper, Typography,} from '@mui/material';
+import { Box, Container, Paper, Typography } from "@mui/material";
 
 function PrivacyPolicy() {
   return (
-   <Box sx={{ backgroundColor: "#f9f9f9", py: 6, minHeight: "100vh" }}>
-      <Container maxWidth='xl'>
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 3, backgroundColor: "#fff" }}>
+    <Box sx={{ backgroundColor: "#f9f9f9", py: 6, minHeight: "100vh" }}>
+      <Container maxWidth="xl" sx={{ p: 2 }}>
+        <Paper
+          elevation={3}
+          sx={{ p: 4, borderRadius: 3, backgroundColor: "#fff" }}
+        >
           <Typography
             variant="h4"
             gutterBottom
@@ -28,10 +31,27 @@ function PrivacyPolicy() {
             We may collect the following types of information:
           </Typography>
           <ul>
-            <li><Typography variant="body1">Name, email, phone number, and contact details</Typography></li>
-            <li><Typography variant="body1">Billing and payment information (for purchases)</Typography></li>
-            <li><Typography variant="body1">Technical data such as IP address, browser type, and device information</Typography></li>
-            <li><Typography variant="body1">Usage data including pages visited, time spent, and preferences</Typography></li>
+            <li>
+              <Typography variant="body1">
+                Name, email, phone number, and contact details
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                Billing and payment information (for purchases)
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                Technical data such as IP address, browser type, and device
+                information
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                Usage data including pages visited, time spent, and preferences
+              </Typography>
+            </li>
           </ul>
 
           {/* Usage of Data */}
@@ -42,10 +62,28 @@ function PrivacyPolicy() {
             The information we collect is used for the following purposes:
           </Typography>
           <ul>
-            <li><Typography variant="body1">To provide and improve our services</Typography></li>
-            <li><Typography variant="body1">To communicate with you regarding inquiries, updates, or promotions</Typography></li>
-            <li><Typography variant="body1">To process transactions securely</Typography></li>
-            <li><Typography variant="body1">To ensure security, prevent fraud, and comply with legal obligations</Typography></li>
+            <li>
+              <Typography variant="body1">
+                To provide and improve our services
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                To communicate with you regarding inquiries, updates, or
+                promotions
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                To process transactions securely
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                To ensure security, prevent fraud, and comply with legal
+                obligations
+              </Typography>
+            </li>
           </ul>
 
           {/* Cookies */}
@@ -88,10 +126,26 @@ function PrivacyPolicy() {
             You have the right to:
           </Typography>
           <ul>
-            <li><Typography variant="body1">Access and request a copy of your data</Typography></li>
-            <li><Typography variant="body1">Request corrections to inaccurate information</Typography></li>
-            <li><Typography variant="body1">Request deletion of your personal data (where applicable)</Typography></li>
-            <li><Typography variant="body1">Opt out of marketing communications</Typography></li>
+            <li>
+              <Typography variant="body1">
+                Access and request a copy of your data
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                Request corrections to inaccurate information
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                Request deletion of your personal data (where applicable)
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1">
+                Opt out of marketing communications
+              </Typography>
+            </li>
           </ul>
 
           {/* Updates */}

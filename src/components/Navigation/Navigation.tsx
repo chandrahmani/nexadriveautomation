@@ -49,7 +49,12 @@ export default function Navigation() {
   return (
     <Box sx={{ display: "flex" }} mb={8} data-testid="navigation">
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "#e8e6deff" }}>
+      <AppBar
+        component="nav"
+        sx={{
+          background: "linear-gradient(90deg, #295dabff, #1976D2, #42A5F5)",
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -82,7 +87,7 @@ export default function Navigation() {
                   padding: 0 5px;
                   text-decoration: none;
                   font-size: 18px;
-                  color: #0c0808ff;
+                  color: white;
                   transition: color 0.2s;
                   font-family:serif;
                 }

@@ -7,7 +7,7 @@ function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: "#e2e2deff",
+        background: "linear-gradient(90deg, #0A1F44, #283593, #1A237E)",
         py: 3,
         mt: "auto", // Push footer to the bottom of the page
       }}
@@ -32,19 +32,40 @@ function Footer() {
               spacing={3}
             >
               <Button
-                sx={{ color: "black", fontFamily: "serif" }}
+                sx={{
+                  color: "white",
+                  fontFamily: "serif",
+                  "&:hover": {
+                    color: "#959595ff", // coral accent on hover
+                    background: "transparent",
+                  },
+                }}
                 onClick={() => navigate("/about")}
               >
                 About Us
               </Button>
               <Button
-                sx={{ color: "black", fontFamily: "serif" }}
+                sx={{
+                  color: "white",
+                  fontFamily: "serif",
+                  "&:hover": {
+                    color: "#959595ff", // coral accent on hover
+                    background: "transparent",
+                  },
+                }}
                 onClick={() => navigate("/privacy")}
               >
                 Privacy Policy
               </Button>
               <Button
-                sx={{ color: "black", fontFamily: "serif" }}
+                sx={{
+                  color: "white",
+                  fontFamily: "serif",
+                  "&:hover": {
+                    color: "#959595ff", // coral accent on hover
+                    background: "transparent",
+                  },
+                }}
                 onClick={() => navigate("/terms")}
               >
                 Terms & Conditions
