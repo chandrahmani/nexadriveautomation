@@ -1,20 +1,22 @@
-import * as React from 'react';
-import { Box } from "@mui/material"
-import { Link } from "react-router"
+import * as React from "react";
+import { Box } from "@mui/material";
+import { Link } from "react-router";
 
-import AppBar from '@mui/material/AppBar';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { DASHBOARD_NESTED_ROUTES, MAIN_ROUTES } from '../../config/router.config';
-
+import AppBar from "@mui/material/AppBar";
+import CssBaseline from "@mui/material/CssBaseline";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+// import ListItemButton from '@mui/material/ListItemButton';
+// import ListItemText from '@mui/material/ListItemText';
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import {
+  DASHBOARD_NESTED_ROUTES,
+  MAIN_ROUTES,
+} from "../../config/router.config";
 
 const drawerWidth = 240;
 const navItems = [...MAIN_ROUTES, DASHBOARD_NESTED_ROUTES[0]];
@@ -27,7 +29,7 @@ export default function Navigation() {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         RTW
       </Typography>
@@ -35,38 +37,49 @@ export default function Navigation() {
       <List>
         {navItems.map(({ path, title, name }) => (
           <ListItem key={name}>
-              <Link key={name} to={path}>
-                {title}
-              </Link>
+            <Link key={name} to={path}>
+              {title}
+            </Link>
           </ListItem>
         ))}
       </List>
     </Box>
   );
 
-
   return (
-    <Box sx={{ display: 'flex' }} mb={8} data-testid="navigation">
+    <Box sx={{ display: "flex" }} mb={8} data-testid="navigation">
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: '#e8e6deff' }}>
+      <AppBar
+        component="nav"
+        sx={{
+          background: "linear-gradient(90deg, #295dabff, #1976D2, #42A5F5)",
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: "none" } }}
           >
             Nav
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <img src="/pre.png" alt="Logo" style={{ height: "100px", width: "200px"}} />
+            <Link to={"/"}>
+              {" "}
+              <img
+                src="/image.png"
+                alt="Logo"
+                style={{ height: "100px", width: "200px" }}
+              />
+            </Link>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {/* Add a style tag for hover effect */}
             <style>
               {`
@@ -74,15 +87,16 @@ export default function Navigation() {
                   padding: 0 5px;
                   text-decoration: none;
                   font-size: 18px;
-                  color: #0c0808ff;
+                  color: white;
                   transition: color 0.2s;
+                  font-family:serif;
                 }
                 .nav-link:hover {
                   color: #493aecff;
                 }
               `}
             </style>
-            {navItems.map(({name, title, path}) => (
+            {navItems.map(({ name, title, path }) => (
               <Link key={name} to={path} className="nav-link">
                 {title}
               </Link>
@@ -99,8 +113,11 @@ export default function Navigation() {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
@@ -109,4 +126,3 @@ export default function Navigation() {
     </Box>
   );
 }
-

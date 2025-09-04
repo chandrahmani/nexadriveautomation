@@ -1,13 +1,10 @@
 import { Route } from "react-router";
 import { ROUTE } from "../types";
-import About from "../views/About";
 import { Home, Settings } from "../views/Dashboard";
 import Landing from "../views/Landing/Landing";
 import Contact from "../views/Contact";
 import Profile from "../views/Dashboard/Profile";
 import Products from "@/views/Products/Products";
-import TermsConditions from "@/views/TermsConditions";
-import PrivacyPolicy from "@/views/PrivacyPolicy";
 
 
 export const configureRoute = (routes: ROUTE[]) => {
@@ -35,29 +32,11 @@ export const MAIN_ROUTES: ROUTE[] = [
 		element: <Products />
 	},
 	{
-		path: '/privacy',
-		title: "",
-		name: 'privacy',
-		element: <PrivacyPolicy />,
-	},
-	{
 		path: '/contact',
 		title: "Contact Us",
 		name: 'contact',
 		element: <Contact />,
 	},
-	{
-		path: '/terms',
-		title: "",
-		name: 'terms',
-		element: <TermsConditions />,
-	},
-	{
-		path: '/about',
-		title: "",
-		name: 'about',
-		element: <About />,
-	}
 ]
 
 // sub route - dashboard/
