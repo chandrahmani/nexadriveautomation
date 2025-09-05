@@ -47,7 +47,7 @@ export default function Navigation() {
   );
 
   return (
-    <Box sx={{ display: "flex" }} mb={8} data-testid="navigation">
+    <Box sx={{ display: "flex", mb: 8 }} data-testid="navigation">
       <CssBaseline />
       <AppBar
         component="nav"

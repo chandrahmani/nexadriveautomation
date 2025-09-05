@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material"
+import { Box, Card, CardContent, CardMedia, Grid, Typography } from "@mui/material"
 
   const products = [
     { title: "Smart Meter", desc: "Advanced smart meters for accurate energy monitoring.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVHD9RL60CurvHfqrD7KhEpNa0NWLLLEF5Gg&s" },
@@ -21,7 +21,7 @@ const Products = () => {
                   boxShadow: 4,
                   transition: "0.3s",
                   "&:hover": { transform: "translateY(-5px)", boxShadow: 6 },
-                  background: '#d6d6d4ff',
+                  background: '#ffffffff',
                 }}>
                 <CardMedia component="img" height="200" image={p.img} alt={p.title} />
                 <CardContent>

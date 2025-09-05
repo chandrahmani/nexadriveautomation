@@ -2,7 +2,7 @@ import { Box, Container, Paper, Typography } from "@mui/material";
 
 function PrivacyPolicy() {
   return (
-    <Box sx={{ backgroundColor: "#f9f9f9", py: 6, minHeight: "100vh" }}>
+    <Box sx={{ backgroundColor: "#ffffffff", py: 6, minHeight: "100vh" }}>
       <Container maxWidth="xl" sx={{ p: 2 }}>
         <Paper
           elevation={3}

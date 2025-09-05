@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 interface ImageSliderProps {
   images: string[];
-  interval?: number; // fixed typo and added property
+  interval?: number;
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ images, interval = 3000 }) => {

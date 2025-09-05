@@ -11,7 +11,7 @@ import {
 function About() {
   return (
     <Box
-      sx={{ backgroundColor: "#f9f9f9", py: 6, minHeight: "100vh" }}
+      sx={{ backgroundColor: "#ffffffff", py: 6, minHeight: "100vh" }}
     >
       <Container maxWidth="xl" sx={{p:2}}>
         <Paper elevation={3} sx={{ p: 4, borderRadius: 3, backgroundColor: "#fff" }}>

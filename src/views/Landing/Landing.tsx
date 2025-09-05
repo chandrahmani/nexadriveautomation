@@ -9,6 +9,8 @@ import {
   Typography,
 } from "@mui/material";
 import ImageSlider from "@/components/ImageSlider/ImageSlider";
+import Products from "../Products/Products";
+import Contact from "../Contact";
 
 const images = [
   {
@@ -67,8 +69,8 @@ const Landing: FC = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper
-              elevation={0}
-              sx={{ p: 1.5, borderRadius: 4, overflow: "hidden" }}
+              elevation={3}
+              sx={{ p: 4, borderRadius: 3, backgroundColor: "#fff" }}
             >
               <img
                 src="/image1.png"
@@ -79,6 +81,8 @@ const Landing: FC = () => {
           </Grid>
         </Grid>
       </Container>
+      <Products />
+      <Contact />
     </Box>
   );
 };
