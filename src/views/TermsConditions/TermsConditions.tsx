@@ -22,7 +22,7 @@ function TermsConditions() {
           <Typography
             variant="h4"
             gutterBottom
-            sx={{ fontWeight: "bold", textAlign: "center" }}
+            sx={{ fontWeight: "bold", color: "#1976d2"}}
           >
             Terms & Conditions
           </Typography>

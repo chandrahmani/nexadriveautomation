@@ -107,7 +107,7 @@ function Contact() {
                     gap={2}
                   >
                     <Button
-                      type="submit"
+                      type='submit'
                       variant="contained"
                       size="large"
                       sx={{

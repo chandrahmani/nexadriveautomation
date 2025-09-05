@@ -18,7 +18,7 @@ function About() {
         <Grid container spacing={4} alignItems="center">
           {/* Left Section */}
           <Grid item xs={12} md={6}>
-            <Typography variant="h3" fontWeight="bold" gutterBottom>
+            <Typography variant="h3" fontWeight="bold" gutterBottom  sx={{color: "#1976d2"}}>
               About Us
             </Typography>
             <Typography variant="body1" color="text.secondary" paragraph>

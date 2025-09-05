@@ -52,9 +52,10 @@ const Landing: FC = () => {
                   href="/products"
                   sx={{
                     color: "#fff",
+                    backgroundColor: "#1976d2",
                     textTransform: "none",
                     "&:hover": {
-                      color: "#FF6F61", // coral accent on hover
+                      color: "#333030ff",
                       background: "transparent",
                     },
                   }}
